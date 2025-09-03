@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pagina HTML</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #333;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+        }
+        nav ul li a:hover {
+            text-decoration: underline;
+        }
+        main {
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Conceitos Git e Github</h1>
+        <img src="./imagens/git_github.png" alt="logo git_github">
+
+        <nav>
+            <ul>
+                <li>Conceitos</li>
+                <li>Fluxo de Git e Github</li>
+                <li>Como resolver conflitos</li>
+            </ul>
+    </header>
+
+    <main>
+        <section>
+            <h2>Conceitos</h2>
+            <p>Git é um sistema de controle de versão distribuído que permite que múltiplos desenvolvedores trabalhem em um projeto simultaneamente, rastreando mudanças no código-fonte ao longo do tempo. Ele facilita a colaboração, o gerenciamento de versões e a recuperação de versões anteriores do código.</p>
+            <p>GitHub é uma plataforma baseada na web que utiliza o Git como sistema de controle de versão. Ele oferece uma interface amigável para hospedar repositórios Git, facilitando a colaboração entre desenvolvedores, o compartilhamento de código e a integração com outras ferramentas de desenvolvimento.</p>
+        </section>
+
+        <section>
+            <img src="./imagens/fluxo_git.jpg" alt="fluxo git" width="600">
+            <h2>Fluxo de Git e Github</h2>
+            <p>O fluxo típico de trabalho com Git e GitHub envolve:</p>
+            <ol>
+                <li>Git init: Inicializa um repositório vazio</li>
+                <li>Git clone: Clona um repositório existente</li>
+                <li>Git add: Adiciona arquivos ao índice para serem commitados</li>
+                <li>Git commit: Salva as mudanças no repositório local</li>
+                <li>Git push: Envia as mudanças para o repositório remoto no GitHub</li>
+                <li>Git pull: Atualiza o repositório local com as mudanças do repositório remoto</li>
+                <li>Git branch: Cria, lista ou exclui branches</li>
+                <li>Git merge: Mescla branches diferentes</li>
+                <li>Git stash: Guarda todas as alterações não commitadas e limpa a área de trabalho</li>
+                <li>Git stash apply: Aplica o stash mais recente, mantendo ele na lista</li>
+                <li>Git status: Mostra o status atual dos arquivos</li>
+                <li>Git checkout nome-da-branch: Muda para outra branch</li>
+                <li>Git remote add origin 'url': Conecta o repositório local a um remoto</li>
+            </ol>
+        </section>
+
+        <section>
+            <h2>Como resolver conflitos</h2>
+            <p>Conflitos ocorrem quando fazem alterações conflitantes no mesmo arquivo ou linha de código. Para resolver conflitos no Git, siga estes passos:</p>
+            <ol>
+                <li>Identifique os arquivos em conflito usando o comando git status.</li>
+                <li>Abra os arquivos em conflito e procure por marcadores de conflito (<<<<<<<, =======, >>>>>>>).</li>
+                <li>Edite os arquivos para resolver os conflitos, escolhendo quais mudanças manter.</li>
+                <li>Depois de resolver os conflitos, adicione os arquivos resolvidos ao índice com git add nome-do-arquivo.</li>
+                <li>Finalize o merge com um commit usando git commit.</li>
+                <li>Se estiver trabalhando com um repositório remoto, envie as mudanças resolvidas com git push.</li>
+                
+            </ol>
+    </main>
+    
+    <footer>
+        <p style="text-align: center;">&copy; 2024 Meu Repositório GitHub</p>
+    </footer>
+</body>
+</html>
